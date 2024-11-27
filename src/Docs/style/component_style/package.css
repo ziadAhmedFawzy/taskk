@@ -1,0 +1,78 @@
+.package {
+    width: 80%;
+    margin: auto;
+}
+
+.package .header {
+    display: flex;
+    direction: rtl;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.package .yearly-monthly button {
+    margin: 0 10px;
+    padding: 3px 8px;
+    border-radius: 50px;
+    border: 1px solid #adadad8a;
+}
+
+.package .yearly-monthly a {
+    color: var(--fourth-color);
+    font-weight: bold;
+}
+
+.plans {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.plans .card {
+    width: 250px;
+    height: 200px;
+    direction: ltr;
+    padding: 20px;
+    border: 1px solid #3e3e3e55;
+    position: relative;
+    border-radius: 5px;
+}
+
+.plans .card h4 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.plans .card p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.plans .card button {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: var(--fourth-color);
+    width: 90%;
+    margin: 0 2%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.unique {
+    background-color: transparent !important;
+    border: 1px solid var(--fourth-color);
+    color: var(--fourth-color) !important;
+}
+
+@media screen and (max-width: 649px) {
+    .plans .card {
+        width: 90% !important;
+        height: 300px;
+        margin: auto;
+    }
+}

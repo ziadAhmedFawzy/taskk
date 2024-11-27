@@ -1,0 +1,50 @@
+.explanation {
+    width: 95%;
+    background-color: #F7F9FF;
+    background-color: #DFE6FF;
+    border-radius: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    overflow: hidden;
+}
+
+.imgs {
+    display: flex;
+    flex-flow: row wrap;
+    width: 60%;
+}
+
+.imgs .img {
+    width: 202px;
+    height: 240px;
+    margin: 6px;
+    background-size: cover;
+}
+
+.explanation .infos {
+    width: 50%;
+    text-align: right;
+    direction: rtl;
+    padding: 50px;
+}
+
+.explanation .infos ul {
+    color: #667085;
+}
+.explanation .infos h2  {
+    color: #172A41;
+}
+
+@media screen and (max-width: 855px) {
+    .explanation {
+        flex-flow: row wrap;
+    }
+    .explanation .img {
+        display: none;
+    }
+    .explanation .infos {
+        width: 100%;
+    }
+}

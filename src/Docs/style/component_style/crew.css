@@ -1,0 +1,46 @@
+.crew .header {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+.crew .header h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.person-img {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.swiper-slide .card {
+    display: flex !important;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.crew .navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.crew .navigation button {
+    margin: 0 10px;
+    color: #4E657F;
+}
+
+@media screen and (max-width: 690px) {
+    .crew .header {
+        width: 100%;
+    }
+}

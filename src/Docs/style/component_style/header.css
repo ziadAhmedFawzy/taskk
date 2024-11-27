@@ -1,0 +1,73 @@
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    margin-bottom: 70px;
+    padding: 10px;
+}
+
+header ul {
+    list-style: none;
+    margin-left: 150px;
+}
+
+
+header ul li {
+    display: inline-block;
+    margin: 0 30px;
+    color: #4E657F;
+    position: relative;
+}
+
+header ul li::before {
+    content: ''; /* i can use ( ^ ) and rotate it */
+    position: absolute;
+    left: -16px;
+    top: 14px;
+    border: 5px solid #fff;
+    border-top-color: #4E657F;
+    width: 1px;
+    height: 1px;
+}
+
+/* to reset main item */
+.main::before {
+    all: unset;
+}
+
+header .btns a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    
+}
+
+header .btns .login {
+    border: 1px solid #4E657F;
+    color: #4E657F;
+}
+
+header .btns .demo {
+    border: 1px solid #4E657F;
+    color: #4E657F;
+    border: none;
+    background-color: var(--fourth-color);
+    color: var(--main-color);
+}
+
+
+@media screen and (max-width: 1021px) {
+    header ul,
+    header .btns {
+        display: none;
+    }
+    .nav-btn {
+        display: block;
+        cursor: pointer;
+    }
+}

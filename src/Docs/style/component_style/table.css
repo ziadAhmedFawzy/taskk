@@ -1,0 +1,40 @@
+.table {
+    margin: 100px;
+}
+
+.table table {
+    width: 90%;
+    margin: auto;
+} 
+
+.table h3 {
+    width: 90%;
+    margin: auto;
+    background-color: #E4E4E7;
+}
+
+table tbody {
+
+}
+
+.checker {
+    background-color: var(--fourth-color);
+    padding: 5px;
+    margin: 10px 0;
+    color: var(--main-color);
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .table {
+        margin: 10px;
+    }
+
+    .table h3 {
+        width: 100%;
+    }
+
+    .table table {
+        width: 100% !important;
+    }
+}

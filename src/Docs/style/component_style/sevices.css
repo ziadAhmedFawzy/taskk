@@ -1,0 +1,63 @@
+.services header {
+    width: 60%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    text-align: center;
+}
+
+.services h2 {
+    width: 90%;
+    font-size: 40px;
+    font-weight: bold;
+    color: #172A41;
+}
+
+.services p {
+    color: var(--third-color);
+}
+
+.services .POS_imgs {
+    width: 100%;
+    display: flex;
+    min-height: 800px;
+}
+
+.services .POS_imgs .sec {
+    width: 50%;
+}
+
+.services .POS_imgs .parmja_dashboard {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .parmja_dashboard {
+        flex-flow: column wrap;
+    }
+    .parmja_dashboard img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 933px) {
+    .services header {
+        width: 100%;
+    }
+    .parmja_dashboard {
+        flex-flow: column wrap;
+    }
+
+    .parmja_dashboard .child2 {
+        display: none;
+    }
+}
+/* @media screen and (max-width: 586px) {
+    .parmja_dashboard {
+        flex-flow: column wrap;
+    }
+    .parmja_dashboard img {
+        width: 300px;
+    }
+} */

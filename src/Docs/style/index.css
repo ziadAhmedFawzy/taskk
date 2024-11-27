@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*  */
+body {
+  font-family: "Cairo", sans-serif;
+  min-height: 999px;
+}
+
+:root {
+  --main-color: #fff;
+  --secondary-color: rgb(255, 90, 0);
+  --third-color: #071027;
+  --fourth-color: #3861FB;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  all: unset;
+}
+
+button:focus {
+  outline: none;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.active {
+  background-color: var(--fourth-color);
+  color: var(--main-color);
+}
+
+.hidden {
+  display: none;
+}
